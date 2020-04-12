@@ -183,7 +183,7 @@ func (r *Req) Do(method, rawurl string, vs ...interface{}) (resp *Resp, err erro
 		switch vv := v.(type) {
 		case Header:
 			for key, value := range vv {
-				req.Header[key] = value
+				req.Header[key] = []string{value}
 			}
 		case http.Header:
 			for key, values := range vv {
