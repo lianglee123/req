@@ -1,3 +1,3 @@
-module github.com/lianglee123/req
+module github.com/imroc/req
 
 go 1.12
